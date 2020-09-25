@@ -1,0 +1,741 @@
+2020-09-25 02:15:45,274 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:15:45,286 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:15:45,286 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:15:45,287 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/Dropbox/py-progz/Scrapconf/scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:15:45,287 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/Dropbox/py-progz/Scrapconf/scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:15:45,287 -  nornir.core -     INFO -        run() - Running task 'cli_stats' with args {} on 2 hosts
+2020-09-25 02:15:51,841 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:15:51,854 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:15:51,855 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:15:51,855 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:15:51,855 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:15:51,856 -  nornir.core -     INFO -        run() - Running task 'cli_stats' with args {} on 2 hosts
+2020-09-25 02:16:25,752 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:16:25,762 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:16:25,762 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'allow_agent'
+
+2020-09-25 02:16:25,762 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:16:25,762 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:16:58,655 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:16:58,665 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'hostkey_verify'
+
+2020-09-25 02:16:58,665 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'hostkey_verify'
+
+2020-09-25 02:16:58,666 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:16:58,666 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:17:18,680 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:17:18,689 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'hostkey_verify'
+
+2020-09-25 02:17:18,689 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'hostkey_verify'
+
+2020-09-25 02:17:18,690 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:17:18,690 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:17:32,930 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:17:32,940 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'look_for_keys'
+
+2020-09-25 02:17:32,941 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 156, in open
+    connection = NetconfScrape(**parameters)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 21, in __init__
+    super().__init__(port=port, **kwargs)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/driver/driver.py", line 33, in __init__
+    super().__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'look_for_keys'
+
+2020-09-25 02:17:32,941 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:17:32,941 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:18:21,914 -  nornir.core -     INFO -        run() - Running task 'iac_render' with args {} on 2 hosts
+2020-09-25 02:18:22,941 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 134, in iac_render
+    if rpcreply.ok:
+AttributeError: 'str' object has no attribute 'ok'
+
+2020-09-25 02:18:26,953 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_edit_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/transport/ptyprocess.py", line 369, in read
+    s = self.fileobj.read1(size)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/transport/systemssh.py", line 84, in _authenticate
+    new_output = self.session.read()
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/transport/ptyprocess.py", line 374, in read
+    raise EOFError("End Of File (EOF). Exception style platform.")
+EOFError: End Of File (EOF). Exception style platform.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/tasks/netconf_edit_config.py", line 27, in netconf_edit_config
+    scrapli_conn = task.host.get_connection("scrapli_netconf", task.nornir.config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir_scrapli/connection.py", line 157, in open
+    connection.open()
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/driver/driver.py", line 55, in open
+    login_bytes = self.transport.open_netconf()
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/transport/systemssh.py", line 35, in open_netconf
+    login_bytes = self._open_netconf_pty()
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/transport/systemssh.py", line 59, in _open_netconf_pty
+    login_bytes: bytes = self._authenticate()
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/decorators.py", line 113, in decorate
+    return self.multiprocessing_timeout(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/decorators.py", line 301, in multiprocessing_timeout
+    result = future.get(timeout=self.timeout_duration)
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 768, in get
+    raise self._value
+  File "/usr/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli_netconf/transport/systemssh.py", line 88, in _authenticate
+    self._ssh_message_handler(output=output)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/scrapli/transport/systemssh.py", line 325, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Timed out connecting to host 192.168.0.222
+
+2020-09-25 02:18:26,954 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'iac_render' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "scrapconf.py", line 113, in iac_render
+    deploy_config = task.run(
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_edit_config (failed)
+
+
+2020-09-25 02:38:17,281 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 2 hosts
+2020-09-25 02:38:17,282 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: netconf_get_config() got an unexpected keyword argument 'target'
+
+2020-09-25 02:38:17,282 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'netconf_get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: netconf_get_config() got an unexpected keyword argument 'target'
+
+2020-09-25 02:38:17,283 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 27, in get_config
+    nc_extract = task.run(task=netconf_get_config, target='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:38:17,283 - nornir.core.task -    ERROR -      start() - Host 'R8_IOSXR_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 27, in get_config
+    nc_extract = task.run(task=netconf_get_config, target='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:38:52,552 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 2 hosts
+2020-09-25 02:38:54,285 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 27, in get_config
+    nc_extract = task.run(task=netconf_get_config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:39:54,404 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:39:54,706 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 27, in get_config
+    nc_extract = task.run(task=netconf_get_config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:44:48,696 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:44:49,010 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 29, in get_config
+    nc_extract = task.run(task=netconf_get_config)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:47:13,919 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:47:14,200 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 29, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:58:11,184 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:58:11,185 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'netconf_get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: netconf_get_config() got an unexpected keyword argument 'filter'
+
+2020-09-25 02:58:11,186 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 32, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filter=filter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:58:52,602 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:58:52,814 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 32, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=filter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 02:59:28,408 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 02:59:28,634 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 34, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=filter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 03:09:54,705 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 03:09:54,990 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 34, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=filter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 03:12:10,938 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 03:12:12,666 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 38, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 03:12:20,225 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 03:12:20,536 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 38, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 03:12:44,761 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 03:12:45,011 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 03:15:00,909 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 03:15:01,118 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:18:44,282 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:18:46,323 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:19:21,348 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:19:21,803 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running', filters=rfilter)
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:20:09,659 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:20:09,906 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:20:25,830 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:20:26,131 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:22:44,741 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:22:45,137 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:25:47,699 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:25:48,184 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:27:23,193 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:27:23,573 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 35, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:47:25,828 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:47:26,162 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 30, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:47:36,897 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:47:37,228 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 30, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 04:51:37,361 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 04:51:37,631 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 30, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/home/htinoco/.local/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
+2020-09-25 09:30:14,914 -  nornir.core -     INFO -        run() - Running task 'get_config' with args {} on 1 hosts
+2020-09-25 09:30:17,271 - nornir.core.task -    ERROR -      start() - Host 'R3_SROS_PE': task 'get_config' failed with traceback:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "get-config-scrapli.py", line 30, in get_config
+    nc_extract = task.run(task=netconf_get_config, source='running')
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/nornir/core/task.py", line 168, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netconf_get_config (failed)
+
+
